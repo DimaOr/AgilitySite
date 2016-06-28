@@ -1,0 +1,109 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /** header **/
+  .header .nav li a , .footer .navifooter  li a {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .nav, .navi ,.footer .navifooter{
+    padding: 0;
+    margin: 0;
+  }
+
+  .navi, .navifooter {
+    height: 30px;
+  }
+
+  .logoText {
+    height: 425px;
+  }
+
+  /** section **/
+  .top_section {
+    height: 215px;
+  }
+
+  .carusel {
+    height: 355px;
+  }
+
+  .client_info {
+    height: 150px;
+
+  }
+
+  .video, .block_client, .technology {
+    height: 260px;
+  }
+
+  .schedule {
+    height: 420px;
+  }
+
+  .bottom_section {
+    margin-top: 20px;
+    height: 120px;
+  }
+
+  /* footer */
+  .footer {
+    padding-top: 80px;
+
+  }
+
+  .footer .type_contact {
+    padding: 60px 0 80px;
+  }
+
+  .footer .nav, .footer .rigths {
+    padding: 40px 10px;
+  }
+}
