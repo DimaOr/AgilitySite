@@ -53,9 +53,52 @@ Carusel.prototype.slideInterval = function (ms) {
   }, ms);
 
 }
+
+
+
+function Number() {
+  this.elemCountry = document.getElementById("country");
+  this.elemEmployee = document.getElementById("employee");
+  this.elemIntegration = document.getElementById("integrations");
+
+  this.elemCountryNumber = +document.getElementById("country").innerText;
+  this.elemEmployeeNumber = document.getElementById("employee").innerText;
+  this.elemIntegrationNumber = document.getElementById("integrations").innerText;
+
+
+  this.itemCoordsY = getCoords(document.querySelector(".info_item"));
+  var self = this;
+
+  window.onscroll = function () {
+
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(self.itemCoordsY);
+    console.log(scrolled);
+    console.log(scrolled < this.itemCoordsY);
+    if (scrolled <= self.itemCoordsY) {
+      console.log(scrolled);
+      var multiplier = scrolled / self.itemCoordsY;
+      console.log(multiplier);
+      self.elemCountry.innerText = Math.ceil(self.elemCountryNumber * multiplier);
+      self.elemEmployee.innerText = Math.ceil(self.elemEmployeeNumber * multiplier);
+      self.elemIntegration.innerText = Math.ceil(self.elemIntegrationNumber * multiplier);
+    }
+    else {
+      self.elemCountry.innerText = Math.ceil(self.elemCountryNumber);
+      self.elemEmployee.innerText = Math.ceil(self.elemEmployeeNumber);
+      self.elemIntegration.innerText = Math.ceil(self.elemIntegrationNumber);
+    }
+  }
+  function getCoords(elem) {
+    var box = elem.getBoundingClientRect();
+    return box.top + pageYOffset;
+  }
+}
+
+var num = new Number();
+
 var carusel = new Carusel({
   element: document.querySelector(".carusel"),
   slideInterval: 3500
 
 });
-
