@@ -20,15 +20,12 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.logo_lable {
-  text-align: center;
-  font-size: 120px;
-  padding: auto auto;
-  color: white;
-}
 
-.logoText{
+
+.logo{
   background-image: url("../img/Logo.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /**section**/
@@ -68,7 +65,17 @@ cursor:pointer;
   width: 30px;
   height: 40px;
 }
-
+.carusel_right, .carusel_left{
+  position: relative;
+}
+.carusel_left img{
+  margin-left: 30px;
+  margin-top:120px;
+}
+.carusel_right img{
+  margin-right: 30px;
+  margin-top:120px;
+}
 
 .carusel_content{
   margin:0 auto;
@@ -81,7 +88,7 @@ cursor:pointer;
 
 .client_info {
   background-image: url("../img/client_info_back.png");
-  background-size: contain;
+  background-size:contain;
   background-repeat: no-repeat;
   text-align: center;
   font-size: 42px;
