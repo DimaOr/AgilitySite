@@ -72,13 +72,10 @@ function Number() {
   window.onscroll = function () {
 
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(self.itemCoordsY);
-    console.log(scrolled);
+
     console.log(scrolled < this.itemCoordsY);
     if (scrolled <= self.itemCoordsY) {
-      console.log(scrolled);
       var multiplier = scrolled / self.itemCoordsY;
-      console.log(multiplier);
       self.elemCountry.innerText = Math.ceil(self.elemCountryNumber * multiplier);
       self.elemEmployee.innerText = Math.ceil(self.elemEmployeeNumber * multiplier);
       self.elemIntegration.innerText = Math.ceil(self.elemIntegrationNumber * multiplier);

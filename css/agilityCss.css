@@ -20,9 +20,13 @@ body {
 
 
 .logo{
-  background-image: url("../img/Logo.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url("../img/Logo.gif") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+
 }
 
 /**section**/
@@ -89,7 +93,8 @@ cursor:pointer;
 
 .client_info {
   background-image: url("../img/client_info_back.png");
-  background-size:contain;
+  width:100%;
+  background-size:cover;
   background-repeat: no-repeat;
   text-align: center;
   font-size: 42px;
