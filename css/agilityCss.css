@@ -1,25 +1,22 @@
 /**All*/
-@font-face {
-  font-family: 'Source Sans Pro', sans-serif;
-  src: url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-}
-
-.site {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
 body {
   background-color: #999999;
   font-family: 'Source Sans Pro', sans-serif;
-}
 
+}
 /** Header **/
 .nav, .navi ,.footer .navifooter{
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size:12px;
+  font-width: 200;
+
 }
 
+.header .nav .selectItem{
+  padding-left: 60px;
+  padding-top: 5px;
+}
 
 
 .logo{
@@ -47,10 +44,14 @@ body {
 }
 
 .info_item h3 {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
   color: white;
 }
 .info_item p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style:italic;
+  font-weight:200;
   font-size: 22px;
   color: white;
 }
