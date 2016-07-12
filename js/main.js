@@ -56,7 +56,7 @@ Carusel.prototype.slideInterval = function (ms) {
 
 
 
-function Number() {
+function ScrollNumbers() {
   this.elemCountry = document.getElementById("country");
   this.elemEmployee = document.getElementById("employee");
   this.elemIntegration = document.getElementById("integrations");
@@ -70,10 +70,7 @@ function Number() {
   var self = this;
 
   window.onscroll = function () {
-
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-
-    console.log(scrolled < this.itemCoordsY);
     if (scrolled <= self.itemCoordsY) {
       var multiplier = scrolled / self.itemCoordsY;
       self.elemCountry.innerText = Math.ceil(self.elemCountryNumber * multiplier);
@@ -99,3 +96,4 @@ var carusel = new Carusel({
   slideInterval: 3500
 
 });
+
