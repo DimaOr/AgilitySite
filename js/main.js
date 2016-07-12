@@ -89,7 +89,7 @@ function ScrollNumbers() {
   }
 }
 
-var num = new Number();
+var num = new ScrollNumbers();
 
 var carusel = new Carusel({
   element: document.querySelector(".carusel"),
